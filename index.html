@@ -1,101 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+<html>
+<head>
+	<title>Berkeley County EMS Virtual Time Clocks</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-    <title>Berkeley County Emergency Services - Home</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="navbar.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="container">
-
-      <!-- Static navbar -->
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Berkeley County Emergency Services</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="ems.html">EMS</a></li>
-              <li><a href="dispatch.html">Dispatch</a></li>
-              <li><a href="fire.html">Fire</a></li>
-              <li><a href="epd.html">EPD</a></li>
-              <li><a href="links.html">Links</a></li>
-             <!--  <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li> -->
-            <!-- </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-              <li><a href="../navbar-static-top/">Static top</a></li>
-              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-            </ul> -->
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
-
-      <div class="panel panel-default">
-        <div class="panel-body">
-          Welcome to Berkeley County Emergency Services site. On this site you will find incident information for disemination to the public, pictures of incidents and information about the services that make up Berkeley County Emergency Services.
-        
-        <img src="images/911.jpg">
-        <img src="images/ems.jpg">
-        <img src="images/fire.jpg">
-        <img src="images/epd.jpg">
-        </div>
-      </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
-</html>
+	<!--JS Code for Function-->
+		<script type="text/javascript">
+    		function goToNewPage()
+    	{
+        	var url = document.getElementById('list').value;
+        	if(url != 'none') {
+            window.open(url, "TimeClock");
+        	}
+    	}
+		</script>
+</head>
+<body>
+	<h1>Berkeley County
+	<img name="patch" src="patch.png">
+		Emergency Medical Services</h1>
+	<h2>Virtual Time Clock System</h2>
+	<h3>Please select your assigned unit.</h3>
+			<div class="form">
+				<form>
+					<select name="list" id="list" accesskey="target">
+						<option value='none'>None</option>
+						<option value="https://suite.vairkko.com/extensions/TimeClock/?clockID=8A772061-5056-2A00-357FFE770303427D&clear=1">Medic 1</option>
+						<option value="https://suite.vairkko.com/extensions/TimeClock/?clockID=70F16B78-5056-3BAA-833CC24CBDCC6AE8&clear=1">Medic 2</option>
+						<option value="https://suite.vairkko.com/extensions/TimeClock/?clockID=70FDC130-5056-3BAA-832D12E00AD694CA&clear=1">Medic 3</option>
+						<option value="https://suite.vairkko.com/extensions/TimeClock/?clockID=71130A1B-5056-3BAA-83B664721F227905&clear=1">Medic 4</option>
+						<option value="https://suite.vairkko.com/extensions/TimeClock/?clockID=711E7FF9-5056-3BAA-83E13E9BF1D184A0&clear=1">Medic 5</option>
+						<option value="https://suite.vairkko.com/extensions/TimeClock/?clockID=712D7DFB-5056-3BAA-836D691ACFB8B91D&clear=1">Medic 6</option>
+						<option value="https://suite.vairkko.com/extensions/TimeClock/?clockID=71365BC8-5056-3BAA-832D575EA0EF6D68&clear=1">Medic 7</option>
+						<option value="https://suite.vairkko.com/extensions/TimeClock/?clockID=713C7A1A-5056-3BAA-83C9B2CBC56C5119&clear=1">Medic 8</option>
+						<option value="https://suite.vairkko.com/extensions/TimeClock/?clockID=714356B2-5056-3BAA-83E0A3F4C4149833&clear=1">Medic 9</option>
+						<option value="https://suite.vairkko.com/extensions/TimeClock/?clockID=714B2CB0-5056-3BAA-83EE8C35E59922EF&clear=1">Medic 10</option>
+						<option value="https://suite.vairkko.com/extensions/TimeClock/?clockID=71C1F719-5056-3BAA-836CD9CFD7722DE7&clear=1">Medic 21</option>
+						<option value="https://suite.vairkko.com/extensions/TimeClock/?clockID=725A2A2E-5056-3BAA-83F14143104A67FF&clear=1">Medic 22</option>
+						<option value="https://suite.vairkko.com/extensions/TimeClock/?clockID=726109E1-5056-3BAA-835E78BAB7A5DD7D&clear=1">Medic 23</option>
+						<option value="https://suite.vairkko.com/extensions/TimeClock/?clockID=7181EB78-5056-3BAA-8319DE93D914C3CB&clear=1">North Battalion Chief</option>
+						<option value="https://suite.vairkko.com/extensions/TimeClock/?clockID=71BA03A3-5056-3BAA-83828987BF6A93A4&clear=1">South Battalion Chief</option>
+						
+						<input type=button value="Clock In/Out" onclick="goToNewPage()" />
+					</select>
+				</form>
+			</div>
+		<iframe name="TimeClock"></iframe>
+	<p><div class="moto"> "Excellence Through Care" </div></p>
+</body>
+<
